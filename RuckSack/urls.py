@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from RuckSackApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.view_home_page, name='home_page')
+
 ]
