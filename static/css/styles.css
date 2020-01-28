@@ -9,7 +9,7 @@ h2 {
 
 #bigdiv {
     padding: 50px;
-    margin: 10% 10%;
+    margin: 5% 10% 10% 10%;
     background-color: black;
     opacity: .95;
     border-radius: 2px;
@@ -32,3 +32,7 @@ button {
     font-size: 2em !important;
 }
 
+.logo {
+    padding: 10px 10px 0px 10px;
+    height: 30%;
+}
