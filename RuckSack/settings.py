@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'RuckSackApp.apps.RucksackappConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

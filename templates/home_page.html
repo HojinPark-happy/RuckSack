@@ -1,6 +1,45 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Content for My App</h2>
-    <p>Stuff etc etc.</p>
+    <div id="bigdiv" class="align-self-center">
+        <h2 class="justify-content-center align-items-center">Where will your next adventure be?</h2><br>
+        <!-- 6 blocks for entering input -->
+        <div>
+            <table class="col" align="center">
+                <form>
+                    <div class="form-group">
+                        <tr>
+                            <td>
+                                <input type="text" id="continent" class="form-control" placeholder="Search for continents.." size="34%">
+                            </td>
+                            <td>
+                                <input type="text" id="country" class="form-control" placeholder="Search for countries.." size="34%">
+                            </td>
+                            <td>
+                                <input type="text" id="city" class="form-control" placeholder="Search for cities.." size="34%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" id="min_duration" class="form-control" placeholder="Enter minimum duration (days)" min="0" size="34%">
+                            </td>
+                            <td>
+                                <input type="number" id="max_duration" class="form-control" placeholder="Enter maximum duration (days)" min="1" size="34%">
+                            </td>
+                            <td>
+                                <input type="number" id="city" class="form-control" placeholder="$ Enter budget" size="34%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="center">
+                                <button type="submit" class="btn btn-light" size="34%">GO!</button>
+                            </td>
+                        </tr>
+
+                    </div>
+                </form>
+            </table>
+        </div>
+    </div>
 {% endblock content %}

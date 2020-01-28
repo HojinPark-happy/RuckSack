@@ -1,3 +1,34 @@
 body {
-    background-color: black;
+    background-color: ghostwhite;
 }
+
+h2 {
+    color: white;
+    font-size: 55px;
+}
+
+#bigdiv {
+    padding: 50px;
+    margin: 10% 10%;
+    background-color: black;
+    opacity: .95;
+    border-radius: 2px;
+}
+
+td {
+    padding: 20px 10px;
+}
+
+input {
+    border-radius: 2px !important;
+}
+
+button {
+    margin: 20px 10px 0px 10px !important;
+    padding: 10px 70px!important;
+    border-radius: 2px !important;
+    font-stretch: expanded !important;
+    font-weight: bold !important;
+    font-size: 2em !important;
+}
+
