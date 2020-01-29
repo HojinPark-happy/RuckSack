@@ -22,5 +22,8 @@ def view_home_page(request):
         continentData,
         countryData,
         cityData]
+
+
+
     return render(request, 'home_page.html', {'context': context})
 

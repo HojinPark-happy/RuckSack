@@ -36,3 +36,17 @@ button {
     padding: 10px 10px 0px 10px;
     height: 30%;
 }
+
+.col-sm-12 {
+    display: inline-block !important;
+    white-space: nowrap;
+}
+
+.col-sm-6 {
+    display: inline-block !important;
+    white-space: nowrap;
+}
+
+.login-block {
+    padding: 0px 75px 0 0;
+}

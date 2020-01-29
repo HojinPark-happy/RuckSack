@@ -2,10 +2,11 @@
 
 {% block content %}
     {%  load static %}
-    <img class="logo" src="{% static "img/logo_name_0_5.png" %}" alt="Logo">
-    <div class="login_info">
-        <a href="">Create an Itinerary!</a> | <a href="">Login/Signup</a>
+    <div class="col-sm-12">
+        <div class="col-sm-6"><img class="logo" src="{% static "img/logo_name_0_5.png" %}" alt="Logo"></div>
+        <div class="col-sm-6 login-block" align="right"><a href="">Create an Itinerary!</a> | <a href="">Login or Sign up</a></div>
     </div>
+
     <div id="bigdiv" class="align-self-center">
         <h2 class="justify-content-center align-items-center">Where will your next adventure be?</h2><br>
         <!-- 6 blocks for entering input -->
@@ -15,13 +16,13 @@
                     <div class="form-group">
                         <tr>
                             <td>
-                                <input type="text" id="continent" class="form-control" placeholder="Search for continents.." size="34%">
+                                <input type="text" id="continent-tags" class="form-control" placeholder="Search for continents.." size="34%">
                             </td>
                             <td>
-                                <input type="text" id="country" class="form-control" placeholder="Search for countries.." size="34%">
+                                <input type="text" id="country-tags" class="form-control" placeholder="Search for countries.." size="34%">
                             </td>
                             <td>
-                                <input type="text" id="city" class="form-control" placeholder="Search for cities.." size="34%">
+                                <input type="text" id="city-tags" class="form-control" placeholder="Search for cities.." size="34%">
                             </td>
                         </tr>
                         <tr>
@@ -32,7 +33,7 @@
                                 <input type="number" id="max_duration" class="form-control" placeholder="Enter maximum duration (days)" min="1" size="34%">
                             </td>
                             <td>
-                                <input type="number" id="city" class="form-control" placeholder="$ Enter budget" size="34%">
+                                <input type="number" id="budget" class="form-control" placeholder="$ Enter budget" size="34%">
                             </td>
                         </tr>
                         <tr>
