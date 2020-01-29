@@ -23,7 +23,7 @@ def view_home_page(request):
         countryData,
         cityData]
 
-
+    
 
     return render(request, 'home_page.html', {'context': context})
 
