@@ -1,9 +1,7 @@
 from django.db import models
 
-# Create your models here.
 
 class Itinerary(models.Model):
-
     title = models.CharField(max_length=50)
     shortDescription = models.CharField(max_length=160)
     days = models.IntegerField(max_length=3)
@@ -11,17 +9,18 @@ class Itinerary(models.Model):
     currency = models.CharField(max_length=1, choices=models.Currencies.choices, default=models.Currencies.US)
     locationKeywords = models.CharField(max_length=500)
 
+
 ## End Itinerary Class
 
 
 class Currencies(models.TextChoices):
     US = '$'
 
+
 ## End Currencies Class
 
 
 class LocationBlock(models.Model):
-
     class Currencies(models.TextChoices):
         US = '$'
 
