@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from RuckSackApp import views
+from user import views as user_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.view_home_page, name='home_page')
-
+    path('', views.view_home_page, name='home_page'),
+    path('register/', user_views.register, name='register'),
 ]
