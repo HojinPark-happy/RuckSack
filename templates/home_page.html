@@ -1,39 +1,42 @@
 {% extends "base.html" %}
-
+{%  load static %}
 {% block content %}
-    {%  load static %}
+
+    <script src="{%  static "js/startPage.js" %}myScript.js"></script>
+
     <div class="col-sm-12">
         <div class="col-sm-6"><img class="logo" src="{% static "img/logo_name_0_5.png" %}" alt="Logo"></div>
         <div class="col-sm-6 login-block" align="right"><a href="">Create an Itinerary!</a> | <a href="">Login or Sign up</a></div>
     </div>
-
+    <p id ="A">A</p>
     <div id="bigdiv" class="align-self-center">
         <h2 class="justify-content-center align-items-center">Where will your next adventure be?</h2><br>
         <!-- 6 blocks for entering input -->
         <div>
+
             <table class="col" align="center">
                 <form>
                     <div class="form-group">
                         <tr>
                             <td>
-                                <input type="text" id="continent-tags" class="form-control" placeholder="Search for continents.." size="34%">
+                                <input id="continent-search" placeholder="Search for continents.." type="text" oninput="updateCheckboxes(this)" autocomplete="off" size="34%">
                             </td>
                             <td>
-                                <input type="text" id="country-tags" class="form-control" placeholder="Search for countries.." size="34%">
+                                <input id="country-search" class="form-control" placeholder="Search for countries.." type="text" oninput="updateCheckboxes(this)" autocomplete="off" size="34%">
                             </td>
                             <td>
-                                <input type="text" id="city-tags" class="form-control" placeholder="Search for cities.." size="34%">
+                                <input id="city-search" class="form-control" placeholder="Search for cities.." type="text" oninput="updateCheckboxes(this)" autocomplete="off" size="34%">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="number" id="min_duration" class="form-control" placeholder="Enter minimum duration (days)" min="0" size="34%">
+                                <input type="number" id="min_duration" class="form-control" placeholder="Enter minimum # of days.." min="0" size="34%">
                             </td>
                             <td>
-                                <input type="number" id="max_duration" class="form-control" placeholder="Enter maximum duration (days)" min="1" size="34%">
+                                <input type="number" id="max_duration" class="form-control" placeholder="Enter maximum # of days.." min="1" size="34%">
                             </td>
                             <td>
-                                <input type="number" id="budget" class="form-control" placeholder="$ Enter budget" size="34%">
+                                <input type="number" id="budget" class="form-control" placeholder="$ Enter budget.." size="34%">
                             </td>
                         </tr>
                         <tr>
@@ -43,6 +46,15 @@
                             </td>
                         </tr>
 
+                    </div>
+                </form>
+                <form>
+                    <div id="data">
+                      <div class="multiselect">
+                        <div id="c_b">
+                          <div id="checkboxes"></div>
+                        </div>
+                      </div>
                     </div>
                 </form>
             </table>

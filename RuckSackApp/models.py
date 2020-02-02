@@ -1,32 +1,29 @@
 from django.db import models
 
+# specifying choices
+
+CURRENCY_CHOICES = (
+    ("$", "$"),
+)
+
 
 class Itinerary(models.Model):
     title = models.CharField(max_length=50)
     shortDescription = models.CharField(max_length=160)
-    days = models.IntegerField(max_length=3)
-    budget = models.IntegerField(max_length=7)
-    currency = models.CharField(max_length=1, choices=models.Currencies.choices, default=models.Currencies.US)
+    days = models.IntegerField()
+    budget = models.IntegerField()
+    currency = models.CharField(max_length=1, choices=CURRENCY_CHOICES, default="$")
     locationKeywords = models.CharField(max_length=500)
-
 
 ## End Itinerary Class
 
 
-class Currencies(models.TextChoices):
-    US = '$'
-
-
-## End Currencies Class
-
 
 class LocationBlock(models.Model):
-    class Currencies(models.TextChoices):
-        US = '$'
 
     lbCity = models.CharField(max_length=50)
-    lbDays = models.IntegerField(max_length=2)
-    lbCurrency = models.CharField(max_length=1, choices=models.Currencies.choices, default=models.Currencies.US)
-    lbForeignKey = models.ForeignKey(Itinerary)
+    lbDays = models.IntegerField()
+    lbCurrency = models.CharField(max_length=1, choices=CURRENCY_CHOICES, default="$")
+    lbForeignKey = models.ForeignKey(Itinerary, default=None, on_delete=models.PROTECT)
 
 ## End LocationBlock Class
