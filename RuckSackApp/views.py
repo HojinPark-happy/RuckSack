@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 import requests
-
+import json
 ####################### API URLS ######################
 teleportRootUrl = "https://api.teleport.org/api/"
 continentUrl = "https://api.teleport.org/api/continents/"
