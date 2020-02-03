@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'RuckSackApp.apps.RucksackappConfig',
     'user.apps.UserConfig',
+    'crispy_forms',
     'rest_framework',
 ]
 
@@ -128,3 +129,4 @@ STATICFILES_DIRS = (
 )
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
