@@ -1,5 +1,8 @@
+@import "nav.css";
+
 body {
     background-color: ghostwhite;
+    margin-top: 10rem;
 }
 
 h2 {

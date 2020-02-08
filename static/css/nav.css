@@ -1,0 +1,19 @@
+.navbar-default {
+    margin : 0 !important;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.main-navigation {
+    clear: both;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/*.nav-container {*/
+/*    display: flex;*/
+/*    -webkit-box-flex: 1;*/
+/*}*/
