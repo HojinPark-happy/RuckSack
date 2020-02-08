@@ -4,13 +4,12 @@
 
 .navbar {
     margin-bottom: 0;
+    height: 82px;
 }
 
-.main-navigation {
-    clear: both;
-    display: block;
-    width: 100%;
-    padding: 10px 0;
+nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255,255,255,1);
 }
 
 /*.nav-container {*/
