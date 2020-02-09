@@ -1,13 +1,23 @@
+$(document).ready(function() {
+  $.getJSON("https://api.teleport.org/api/continents/", function( data ) {
 
-var continentLinkArray = $.getJSON("https://api.teleport.org/api/continents/", function( data ) {
-  var items = [];
-  $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val + "</li>" );
+    //  Get and set the contents of the continent checkboxes
+    continentData = data['_links']['continent:items'];
+    setContinents(continentData);
+
+
   });
+})
 
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
-  }).appendTo( "body" );
-});
+
+//  METHOD: Sets the contents of the continent checkboxes
+//  PARAMS: continentData -> array of JSON data consisting of continents
+function setContinents(continentData) {
+  continentData.forEach( function (obj){
+        $('#continentList').append($('<option></option>').attr('value', obj.name).text(obj.name));
+    });
+
+}
+
+
 

@@ -2,13 +2,12 @@
 {%  load static %}
 {% block content %}
 
-    <script src="{%  static "js/startPage.js" %}myScript.js"></script>
+    <script src="{%  static "js/startPage.js" %}"></script>
 
 {#    <div class="col-sm-12">#}
 {#        <div class="col-sm-6"><img class="logo" src="{% static "img/logo_name_0_5.png" %}" alt="Logo"></div>#}
 {#        <div class="col-sm-6 login-block" align="right"><a href="">Create an Itinerary!</a> | <a href="{% url 'login' %}">Login</a> | <a href="{% url 'register' %}">Sign Up</a></div>#}
 {#    </div>#}
-    <p id ="A"></p>
     <div id="bigdiv" class="align-self-center">
 
         <h2 class="justify-content-center align-items-center">Where will your next adventure be?</h2><br>
@@ -20,15 +19,23 @@
                     <div class="form-group">
                         <tr>
                             <td>
-                                <input id="continent-search" class="form-control" placeholder="Search for continents.." type="text" oninput="updateCheckboxes(this)" autocomplete="off" size="34%">
+                                <select id = "continentList" multiple id = "continentList" class="form-control">
+                                    <option value="">Search for continents...</option>
+                                </select>
                             </td>
                             <td>
-                                <input id="country-search" class="form-control" placeholder="Search for countries.." type="text" oninput="updateCheckboxes(this)" autocomplete="off" size="34%">
+                                <select id = "countryList" class="form-control">
+                                    <option value="">Search for countries...</option>
+                                </select>
                             </td>
                             <td>
-                                <input id="city-search" class="form-control" placeholder="Search for cities.." type="text" oninput="updateCheckboxes(this)" autocomplete="off" size="34%">
+                                <select id = "cityList" class="form-control">
+                                    <option value="">Search for cities...</option>
+                                </select>
                             </td>
                         </tr>
+
+                        <!-- TODO: Make sure min duration is <= max duration -->
                         <tr>
                             <td>
                                 <input type="number" id="min_duration" class="form-control" placeholder="Enter minimum # of days.." min="0" size="34%">
@@ -47,15 +54,6 @@
                             </td>
                         </tr>
 
-                    </div>
-                </form>
-                <form>
-                    <div id="data">
-                      <div class="multiselect">
-                        <div id="c_b">
-                          <div id="checkboxes"></div>
-                        </div>
-                      </div>
                     </div>
                 </form>
             </table>
