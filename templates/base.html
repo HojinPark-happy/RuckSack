@@ -31,8 +31,12 @@
                         <!-- Navbar Right Side -->
                         <div class="navbar-nav">
                             <a style="color:blue" class="nav-item nav-link" href="#">Create your Itinerary!</a>
-                            <a style="color:blue" class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                            <a style="color:blue" class="nav-item nav-link" href="{% url 'register' %}">Sign Up</a>
+                            {% if user.is_authenticated %}
+                                <a style="color:blue" class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                            {% else %}
+                                <a style="color:blue" class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+                                <a style="color:blue" class="nav-item nav-link" href="{% url 'register' %}">Sign Up</a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

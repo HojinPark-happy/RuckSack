@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 import requests
+import urllib3
+
 import json
 ####################### API URLS ######################
 teleportRootUrl = "https://api.teleport.org/api/"
