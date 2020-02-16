@@ -13,29 +13,12 @@
         <h2 class="justify-content-center align-items-center">Where will your next adventure be?</h2><br>
         <!-- 6 blocks for entering input -->
         <div>
-
+            <p id="city_list"></p>
             <table class="col" align="center">
                 <form>
                     <div class="form-group">
-                        <tr>
-                            <td>
-                                <select id = "continentList" multiple id = "continentList" class="form-control">
-                                    <option value="">Search for continents...</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select id = "countryList" class="form-control">
-                                    <option value="">Search for countries...</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select id = "cityList" class="form-control">
-                                    <option value="">Search for cities...</option>
-                                </select>
-                            </td>
-                        </tr>
-
                         <!-- TODO: Make sure min duration is <= max duration -->
+                        <input type="text" id="city_search" class="form-control" placeholder="Enter cities.." size="100%">
                         <tr>
                             <td>
                                 <input type="number" id="min_duration" class="form-control" placeholder="Enter minimum # of days.." min="0" size="34%">
@@ -59,4 +42,6 @@
             </table>
         </div>
     </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHX3tNDqky_VKdAL4VGLWaM8fXS4Rh6o=places">
 {% endblock content %}
