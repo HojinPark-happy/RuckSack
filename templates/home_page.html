@@ -10,20 +10,28 @@
         <!-- 6 blocks for entering input -->
         <div>
             <p id="city_list"></p>
-            <table class="col" align="center">
-                <form>
-                    <div class="form-group">
-                        <!-- TODO: Make sure min duration is <= max duration -->
-                        <input type="search" id="city_search" class="form-control" placeholder="Enter cities.." size="100%" autocomplete="off">
+
+            <form>
+                <div class="form-group">
+                    <!-- TODO: Make sure min duration is <= max duration -->
+                    <table id="city_search_input" class="col" align="center">
                         <tr>
                             <td>
-                                <input type="number" id="min_duration" class="form-control" placeholder="Enter minimum # of days.." min="0" size="34%">
+                                <input type="search" id="city_search" class="form-control" placeholder="Enter cities.." autocomplete="off">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table class="col" align="center">
+                        <tr>
+                            <td>
+                                <input type="number" id="min_duration" class="form-control" placeholder="Enter minimum # of days.." min="0">
                             </td>
                             <td>
-                                <input type="number" id="max_duration" class="form-control" placeholder="Enter maximum # of days.." min="1" size="34%">
+                                <input type="number" id="max_duration" class="form-control" placeholder="Enter maximum # of days.." min="1">
                             </td>
                             <td>
-                                <input type="number" id="budget" class="form-control" placeholder="$ Enter budget.." size="34%">
+                                <input type="number" id="budget" class="form-control" placeholder="$ Enter budget..">
                             </td>
                         </tr>
                         <tr>
@@ -32,10 +40,10 @@
                                 <button type="submit" class="btn btn-light" size="34%">GO!</button>
                             </td>
                         </tr>
+                    </table>
+                </div>
+            </form>
 
-                    </div>
-                </form>
-            </table>
         </div>
     </div>
 
