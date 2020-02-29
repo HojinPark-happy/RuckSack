@@ -1,7 +1,22 @@
 @import "nav.css";
 
+/*
+ ------- COLOR SCHEME -------
+    Light Shades: 		#f5f6f6
+    Light Accent: 		#d69a4b
+    Main Brand Color: 	#87bfe8
+    Dark Accent: 		#ac3f3c
+    Dark Shades: 		#3d5179
+
+    Cornflower	#87bfe8	Primary
+    East Bay	#3d5179	Info
+    Silver Tree	#5eb47e	Success
+    Anzac		#dba446	Warning
+    Pomegranate	#f44336	Danger
+ */
+
 body {
-    background-color: ghostwhite;
+    background-color: #f5f6f6;
     margin-top: 8rem;
 }
 
@@ -32,15 +47,29 @@ input {
 button {
     margin: 50px 10px 0px 10px !important;
     padding: 10px 70px!important;
-    border-radius: 10px !important;
+    border-radius: 5px !important;
     font-stretch: expanded !important;
     font-weight: bold !important;
     font-size: 2em !important;
 }
 
+#add_city_button {
+    font-size: 20px !important;
+    margin: 0px !important;
+    align-items: center !important;
+    width: 100% !important;
+    background-color: slategray !important;
+    color: white !important;
+    border-width: 0;
+}
+
 .logo {
     padding: 5px 5px 0px 5px;
     height: 15%;
+}
+
+#navbar-logo {
+    padding-left: 50px;
 }
 
 /*.col-sm-12 {*/

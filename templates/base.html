@@ -14,6 +14,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Google Places API -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- Material Kit CSS -->
+    <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
 
 
     <title>RuckSack - Let's Travel!</title>
@@ -23,8 +28,9 @@
     <header class="site-header" role="banner">
         <div class="nav-container">
             <nav class="navbar navbar-expand-md bg-steel fixed-top" role="navigation">
+                <a class="navbar-brand mr-4" id="navbar-logo" href="/"><img class="logo" src="{% static "img/logo_name.svg" %}" alt="Logo" width="100%"></a>
                 <div class="container">
-                    <a class="navbar-brand mr-4" href="/"><img class="logo" src="{% static "img/logo_name.svg" %}" alt="Logo" width="100%"></a>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -33,12 +39,12 @@
                         </div>
                         <!-- Navbar Right Side -->
                         <div class="navbar-nav">
-                            <a style="color:blue" class="nav-item nav-link" href="#">Create your Itinerary!</a>
+                            <a style="color:#3d5179" class="nav-item nav-link" href="#">Create your Itinerary!</a>
                             {% if user.is_authenticated %}
-                                <a style="color:blue" class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                                <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
                             {% else %}
-                                <a style="color:blue" class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                                <a style="color:blue" class="nav-item nav-link" href="{% url 'register' %}">Sign Up</a>
+                                <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+                                <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'register' %}">Sign Up</a>
                             {% endif %}
                         </div>
                     </div>

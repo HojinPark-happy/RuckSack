@@ -1,3 +1,18 @@
+/*
+ ------- COLOR SCHEME -------
+    Light Shades: 		#f5f6f6
+    Light Accent: 		#d69a4b
+    Main Brand Color: 	#87bfe8
+    Dark Accent: 		#ac3f3c
+    Dark Shades: 		#3d5179
+
+    Cornflower	#87bfe8	Primary
+    East Bay	#3d5179	Info
+    Silver Tree	#5eb47e	Success
+    Anzac		#dba446	Warning
+    Pomegranate	#f44336	Danger
+ */
+
 .navbar-default {
     margin : 0 !important;
 }
@@ -5,11 +20,11 @@
 .navbar {
     margin-bottom: 0;
     height: 82px;
+    background-color: #f5f6f6;
 }
 
 nav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(255,255,255,1);
 }
 
 /*.nav-container {*/
