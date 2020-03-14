@@ -27,3 +27,7 @@ def view_home_page(request):
         cityData]
 
     return render(request, 'home_page.html', {'context': context})
+
+
+def view_create_itinerary(request):
+    return render(request, 'create_itinerary.html')
