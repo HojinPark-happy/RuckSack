@@ -6,7 +6,7 @@
 
     <div id="bigdiv" class="align-self-center" align="center">
 
-        <h2 class="justify-content-center align-items-center">Where will your next adventure be?</h2><br>
+        <h2 class="justify-content-center align-items-center">Where will your next adventure be?</h2><br><br>
         <!-- 6 blocks for entering input -->
         <div>
             <p id="city_list"></p>
@@ -14,33 +14,24 @@
             <form>
                 <div class="form-group">
                     <!-- TODO: Make sure min duration is <= max duration -->
-                    <table id="city_search_input" class="col" align="center">
-                        <tr>
-                                <td width="75%">
-                                    <input type="search" id="city_search" class="form-control" placeholder="Enter cities.." autocomplete="off">
-                                </td>
-                                <td width="25%">
-                                    <button id="add_city_button" type="button">ADD</button>
-                                </td>
-                        </tr>
-                    </table>
+                    <input type="search" id="city_search" class="form-control" placeholder="Enter cities.." autocomplete="off">
                     <br>
                     <table class="col" align="center">
                         <tr>
-                            <td>
+                            <td style="padding:0 15px 0 0">
                                 <input type="number" id="min_duration" class="form-control" placeholder="Enter minimum # of days.." min="0">
                             </td>
-                            <td>
+                            <td style="padding:0 0 0 15px">
                                 <input type="number" id="max_duration" class="form-control" placeholder="Enter maximum # of days.." min="1">
                             </td>
-                            <td>
-                                <input type="number" id="budget" class="form-control" placeholder="$ Enter budget..">
+                            <td style="padding:0 0 0 15px">
+                               <input type="number" id="budget" class="form-control" placeholder="$ Enter budget..">
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td align="center">
-                                <button type="submit" class="btn" style="background-color: #87bfe8" size="34%">GO!</button>
+                                <button type="submit" class="btn" size="34%">GO!</button>
                             </td>
                         </tr>
                     </table>

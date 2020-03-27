@@ -3,9 +3,9 @@
     Light Shades: 		#FDFCFB
     Light Accent: 		#E3DACD
     Main Brand Color: 	#B2A480
-    Dark Accent:		#6B6952
-    Dark Shades:		#59313C
-
+    Dark Shades:		#6B6952
+    Dark Accent:		#59313C
+    Light Gray Text:    #AFAFAF
 
     Cornflower	#87bfe8	Primary
     East Bay	#3d5179	Info
@@ -22,6 +22,12 @@
     margin-bottom: 0;
     height: 82px;
     background-color: #FDFCFB;
+}
+
+.nav-item {
+    padding-top: 3em !important;
+    padding-right: 2em !important;
+    padding-left: 2em !important;
 }
 
 /*.nav-container {*/
