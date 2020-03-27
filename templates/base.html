@@ -39,12 +39,12 @@
                         </div>
                         <!-- Navbar Right Side -->
                         <div class="navbar-nav">
-                            <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'create_itinerary' %}">Create your Itinerary!</a>
+                            <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'create_itinerary' %}">CREATE AN ITINERARY</a>
                             {% if user.is_authenticated %}
-                                <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                                <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'logout' %}">LOGOUT</a>
                             {% else %}
-                                <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                                <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'register' %}">Sign Up</a>
+                                <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'login' %}">LOGIN</a>
+                                <a style="color:#3d5179" class="nav-item nav-link" href="{% url 'register' %}">SIGN UP</a>
                             {% endif %}
                         </div>
                     </div>

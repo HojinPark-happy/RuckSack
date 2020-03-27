@@ -1,10 +1,11 @@
 /*
  ------- COLOR SCHEME -------
-    Light Shades: 		#f5f6f6
-    Light Accent: 		#d69a4b
-    Main Brand Color: 	#87bfe8
-    Dark Accent: 		#ac3f3c
-    Dark Shades: 		#3d5179
+    Light Shades: 		#FDFCFB
+    Light Accent: 		#E3DACD
+    Main Brand Color: 	#B2A480
+    Dark Accent:		#6B6952
+    Dark Shades:		#59313C
+
 
     Cornflower	#87bfe8	Primary
     East Bay	#3d5179	Info
@@ -20,11 +21,7 @@
 .navbar {
     margin-bottom: 0;
     height: 82px;
-    background-color: #f5f6f6;
-}
-
-nav {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FDFCFB;
 }
 
 /*.nav-container {*/

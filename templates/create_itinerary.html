@@ -1,6 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
     <div>
-        <h1>HAHAHA</h1>
+        <form>
+            <div class="form-group">
+                <div class="container">
+                    <h3 class="main-scheme">CREATE AN ITINERARY</h3>
+                    <input type="text" id="it_title" class="form-control" placeholder="Enter title.."><br>
+                    <input type="number" id="it_duration" class="form-control" placeholder="0"><br>
+                    <input type="number" id="it_budget" class="form-control" placeholder="0"><br>
+                    <table id="city_search_input" class="col" align="center">
+                            <tr>
+                                    <td width="75%">
+                                        <input type="search" id="city_search" class="form-control" placeholder="Enter cities.." autocomplete="off">
+                                    </td>
+                                    <td width="25%">
+                                        <button id="add_city_button" type="button">ADD</button>
+                                    </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </form>
     </div>
 {% endblock content %}
