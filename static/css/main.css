@@ -40,6 +40,26 @@ input {
     border-radius: 2px !important;
 }
 
+#add-button {
+     height: 2.5em !important;
+    font-size: 1.25em !important;
+    margin: 0px !important;
+    align-items: center !important;
+    width: 100% !important;
+    color: #6B6952 !important;
+    background-color: #FDFCFB !important;
+    border-width: thin !important;
+    border-color: #AFAFAF !important;
+}
+
+.home-tag {
+    background-color: #59313C;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+
+}
+
 button {
     margin: 50px 10px 0px 10px !important;
     padding: 10px 70px!important;
@@ -51,17 +71,6 @@ button {
     background-color: #FDFCFB !important;
     border-width: thin !important;
     border-color: #AFAFAF !important;
-}
-
-
-#add_city_button {
-    font-size: 20px !important;
-    margin: 0px !important;
-    align-items: center !important;
-    width: 100% !important;
-    background-color: #FDFCFB !important;
-    color: white !important;
-    border-width: 0;
 }
 
 .logo {
